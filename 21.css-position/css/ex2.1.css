@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0;}
+.mainbanner{
+    margin: 0 auto;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mainbanner>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainbanner>h2{
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    /* top: calc(50% - 53px);
+    left: calc(50% - 105px); */
+}
+.mainbanner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.4;
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0;
+    /* 0픽셀은 단위(px)생략가능 */
+}
+.a{
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+
+    /* border: 1px solid red; */
+
+    /* border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: red; */
+
+    border-left: 10px solid red;
+
+    /* border-right-width: 10px;
+    border-right-style: solid;
+    border-right-color: blue; */
+
+    border-right: 10px solid blue;
+
+
+    border-top: 4px dotted green;
+    border-bottom: 4px double aqua;
+
+
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    padding: 10px;
+
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+ul {
+    border:2px solid red;
+}
+.a+p {
+    border:1px solid blue;
+}
+p{
+    border:1px solid red;
+}
+body{
+    border:1px solid green;
+}

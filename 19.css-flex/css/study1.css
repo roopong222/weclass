@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+
+.box{
+    width: 600px;
+    height: 700px;
+    background: pink;
+    margin: 0 auto;
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap:wrap; */
+
+}
+
+.box>div{
+    flex-basis: 200px;
+    flex-shrink: 1;
+
+}
+
+.box .a{background: red;
+    /* order: 0; */
+    flex-shrink: 2;
+}
+.b{background: green;
+    /* order: 1; */
+}
+.c{background: blue;
+    /* order: 3; */
+}
+.d{background: orange;
+    /* order: 2; */
+}

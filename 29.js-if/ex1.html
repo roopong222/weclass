@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <h1>퀴즈</h1>
+    <pre>사용자에게 체중과 키를 입력받아서 bmi수치를 계산하여 수치에 따라 비만 과체중 정상 저체중으로 나누어 결과를 body태그에 필기하는 소스코드를 완성해보세요
+
+        bmi 계산식
+        70kg의 170cm의 bmi계산식
+        70/(1.7*1.7)
+
+        계산된 bmi가 25 이상이라면 비만
+                    23 이상 24.9이하라면 과체중
+                    18.5이상 22.9이하라면 정상
+                    18.5미만 이라면 저체중
+        완성예시) 당신의 키는 170센티미터이고 몸무게는 70kg입니다 bmi수치는 24.2이며 과체중입니다.
+    </pre>
+
+    <script>
+        let name = prompt(`이름`)
+        let kg = Number(prompt(`몸무게`))
+        let cm = Number(prompt(`키`))
+        let cmm = cm*0.01
+        let bmi = Math.round((kg/(cmm*cmm))*10)/10
+        let a;
+        if(bmi>=25){
+            a = `비만`
+        }else if(bmi>=23 && bmi<=24.9){
+            a = `과체중`
+        }else if(bmi>=18.5 && bmi<=22.9){
+            a = `정상`
+        }else{
+            a = `저체중`
+        }
+
+        // document.write(`당신의 키는 ${cm}센티미터이고 몸무게는 ${kg}kg입니다 bmi수치는 ${bmi}이며 ${a}입니다.`)
+
+        document.write(
+        `<table class="gradeStyle">
+            <caption>${name}님의 비만도 검사결과</caption>
+            <tr>
+                <th>신장</th>
+                <td>${cm}cm</td>
+            </tr>
+            <tr>
+                <th>체중</th>
+                <td>${kg}kg</td>
+            </tr>
+            <tr>
+                <th>bmi</th>
+                <td>${bmi}</td>
+            </tr>
+            <tr>
+                <th>결과</th>
+                <td>${a}</td>
+            </tr>
+        </table>`
+        )
+    </script>
+
+
+
+    
+</body>
+</html>

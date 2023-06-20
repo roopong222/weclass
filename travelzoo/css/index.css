@@ -1,0 +1,126 @@
+ul{list-style: none;}
+
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* layout(대략적인 레이아웃: 큰영역 -> 작은영역) */
+.all{
+    width: 820px;
+    margin: 0 auto;
+}
+header{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid blue;
+    margin-bottom: 15px;
+}
+main{
+    /* border: 1px solid lime; */
+    margin-bottom: 50px;
+}
+footer{
+    margin-bottom: 10px;
+}
+
+/* detail */
+
+/* -------------------header---------------------- */
+
+header h1{
+    margin-bottom: 5px;
+}
+header p{
+    font-style: italic;
+    color: grey;
+}
+
+/* -------------------main---------------------- */
+
+main h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+main form{
+    background:#eeeeee;
+    border: 1px solid #bbb;
+    /* 16진수 색상 표현법에서 똑같은 문자가 6개가 반복된다면 3자리로 줄여서 표기할수 있다. */
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.nation>section{
+    width: calc((100% - 40px)/3);
+    float: left;
+    margin-right: 20px;
+    /* float를 사용하여 공중에 띄우게 되면 암묵적으로 display형태는 inline-block으로 변한다. */
+}
+.nation>section:last-of-type{margin-right: 0;}
+
+.nation::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nation section img{
+    margin-right: 15px;
+    /* margin-bottom: 20px; */
+    float: left;
+}
+section li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section>h4{
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+section>ul>li{
+    margin-bottom: 20px;
+}
+section>ul>li:last-of-type{
+    margin-bottom: 0;
+}
+
+/* -------------------footer---------------------- */
+.fL{
+    float: left;
+}
+.fR{
+    float: right;
+}
+footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer{
+    background: #eeeeee;
+    padding: 10px;
+}
+footer dl>*{float: left; margin-right: 10px;}
+footer dl>dd:nth-of-type(3),footer dl>dd:nth-of-type(4){
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+footer dl::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+dl>dt{
+    font-weight: bold;
+}
+dl>dd{
+    color: blue;
+}
+.copy{
+    margin-top: 10px; color: #333;
+}
+.bc{
+    color: skyblue;
+}
+.fR *{vertical-align: middle;}

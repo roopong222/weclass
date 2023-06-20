@@ -1,0 +1,103 @@
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.w1440{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* ****************************************************************** */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+    overflow: hidden;
+    font-weight: bold;
+    z-index: 5;
+    transition: all 0.5s ease 0s;
+}
+header:hover{
+    height: 350px;
+    background: #fff;
+    color: #000;
+}
+.gnb>ul{
+    border: 1px solid red;
+    display: flex;
+    height: 80px;
+
+}
+.gnb>ul>li{
+    border: 1px solid red;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gnb>ul>li>ul{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+}
+.gnb>ul>li>ul>li{
+    padding: 8px 0;
+}
+/* ******************************************************************** */
+
+.logoArea{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+}
+.logoArea img{
+    width: 200px;
+    height: 40px;
+    object-fit: contain;
+}
+.langList>ul{
+    display: flex;
+    height: 80px;
+}
+.langList>ul>li{
+    border: 1px solid red;
+    width: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------------------------------------------------------------ */
+.videobanner{
+    width: 100%;
+    height: 780px;
+}
+.videobanner>video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.videobanner>h2{
+    position: absolute;
+    bottom: 48%;
+    left: 38%;
+}
+.videobanner>a{
+    position: absolute;
+    bottom: 40%;
+    left: 45%;
+    padding: 18px 54px;
+    background: rgb(185, 185, 185,0.7);
+}

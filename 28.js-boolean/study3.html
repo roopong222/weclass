@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <h1>삼항 연산자</h1>
+    <p>조건? 조건의결과가 참일때 남는 값:조건의결과가 거짓일때 남는 값</p>
+
+    <script>
+        // alert(5>3?`열심히하자`:`조금만자자`)
+        // alert(100>20?30:25)
+        // alert(50<20 ? 30 : 40>20 ? 20 : 30>20? 10 : 0)
+
+        // 사용자에게 나이를 물어보고 20세 이상이라면 입장이 가능합니다.
+        // 그렇지않다면 입장이 불가능합니다. 라는 알림창이 나올 수 있도록
+        
+        let n = Number(prompt(`나이`))
+        // alert(n>=20 ? `입장이 가능합니다.`:`입장이 불가능합니다.`)
+        alert(n>=20 ? `입장이 가능합니다.` : n<20 ? `입장이 불가능합니다.` : `숫자만 다시 입력해주세요`)
+    </script>
+</body>
+</html>

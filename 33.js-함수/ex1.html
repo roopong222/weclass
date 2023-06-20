@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+</head>
+<body>
+    <p>
+        퀴즈)
+        다음과 같은 변수가 있다
+        세계의 점수를 매개로하여 평균값을 계산하여 리턴하는 함수를 만들어보시오.
+    </p>
+    <script>
+        function getAver(a,b,c){ 
+            return (a+b+c)/3
+        }
+        // let aver = (getAver(60,70,80))
+        // alert(aver)
+    </script>
+    <p>
+        평균점수를 재료로 하여 등급을 리턴하는 함수를 만들어보시오.
+        평균점수가 90점이상이라면 A
+                  80점이상이라면 B
+                  70점이상이라면 C
+                  70점미만이라면 D 등급을 리턴하는 함수를 만들어 보시오.
+    </p>
+
+    <script>
+        // function getGrade(aver){                                                             
+        //     return aver >= 90 ? `A`: aver >= 80 ? `B` : aver >= 70 ? `C`:`D`
+        // }
+        //    alert(getGrade(60))
+
+        function getGrade(aver){
+            if(aver>=90){
+                return`A`
+            }else if(aver>=80){
+                return`B`
+            }else if(aver>=70){
+                return`C`
+            }else{
+                return`D`
+            }
+        }
+           alert(getGrade(getAver(90,90,90)))
+    </script>
+</body>
+</html>

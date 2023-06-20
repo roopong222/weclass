@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}
+
+.tabMenu{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #555;
+    display: flex;
+    color: #fff;
+    margin: 0 auto;
+}
+.tabMenu>dt{
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tabMenu>dt.on{
+    opacity: 1;
+    background: #000;
+}
+.tabMenu>dt.on + dd{
+    opacity: 1;
+}
+.tabMenu>dd{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}

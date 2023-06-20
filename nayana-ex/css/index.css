@@ -1,0 +1,125 @@
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.all{
+    width: 920px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+/* header>nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+header>nav>ul{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+.lnb{
+    border: 1px solid red;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    text-transform:uppercase;
+}
+.lnb>li{
+    background: #666;
+    color: white;
+    font-size: 0.9rem;
+    border-right: 1px solid #eee;
+    padding-right: 10px;
+}
+.lnb>li:last-of-type{
+    border: none;
+    padding-right: 0;
+}
+.gnb{
+    font-size: 1.3rem
+}
+.gnb>li{
+    margin-right: 50px;
+
+}
+.gnb>li:last-of-type{
+    margin-right: 20px;
+}
+
+/* ------------------------------------------------------------ */
+
+.contents{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.contents>section{
+width: calc((100% - 60px)/3);
+}
+.contents>section h2{
+    border-bottom: 0.5px solid #ccc;
+    margin-bottom: 8px;
+    padding-bottom: 2px;
+}
+
+.contents>section>.sh2{
+    display: flex;
+    justify-content: space-between;
+}
+section>.ul2>li>a{
+    display: flex;
+    justify-content: space-between;
+}
+section>.ul2>li{
+    margin-bottom: 2px;
+}
+.contents>section>.ul3{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------------------- */
+
+footer{
+    margin-top: 30px;
+    background: #f1f0f0;
+}
+.ft{
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+}
+.ft>.flogo{
+    margin-right: 40px;
+}
+.ft>.corinfo{
+    display: flex;
+    flex-wrap: wrap;
+    color: #888;
+}
+.ft>.corinfo>ul{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+}
+.ft>.corinfo>ul>li{
+    padding: 0 20px;
+    border-right: 1px solid #666;
+}
+.ft>.corinfo>ul>li:nth-of-type(1){
+    padding: 0 20px 0 0;
+}
+.ft>.corinfo>ul>li:last-of-type{
+    border: none;
+}
+.corinfo>ul>li b{
+    color: rgb(7, 146, 135);
+    font-weight: bold;
+}

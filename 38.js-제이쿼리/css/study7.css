@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+ol,ul{list-style: none;}
+
+.list{
+    /* width: 1000px; */
+}
+
+.list>li{
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.list>li.on{
+    border-bottom: 1px solid #000;
+}

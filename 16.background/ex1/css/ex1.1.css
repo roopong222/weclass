@@ -1,0 +1,63 @@
+/* 1.reset */
+*{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+
+/* 2.common - style */
+body{
+    background-color: rgb(255, 251, 245);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 3.layout - (크기,배치) */
+.all{
+    height: 800px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* 4.detail - (글씨크기,글씨색,배경색,마진,패딩) */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 251, 245);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.all{
+    height: 800px;
+    width: 900px;
+    margin: 0 auto;
+    background: url(../cosmo/images/dream.jpg) no-repeat 100% 100%;
+}
+h1{
+    padding: 10px 0;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: gold;
+    border-bottom:5px solid red;
+}
+p{
+    margin-top: 10px;
+}
+.copy{
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 5px solid red;
+}

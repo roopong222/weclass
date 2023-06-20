@@ -1,0 +1,57 @@
+*{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+}
+header{
+    width: 1980px;
+    height: 250px;
+}
+.all{
+    width: 1200px;
+    margin: 0 auto;
+}
+p.mt50{
+    background:url(../예제2/img.png) no-repeat 0 0,url(../예제2/sub_tit_line.gif) repeat-x 0 50%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.all>h1{
+    font-family: 'PulmuoneL';
+    font-size: 52px;
+    margin: 100px 0 50px;
+    text-align: center;
+    padding: 0 70px;
+}
+h1>span{
+    color: lawngreen;
+}
+@font-face {
+    font-family: 'PulmuoneL';
+    src: url(../예제2/PulmuoneLOHASBold.woff);
+}
+.all>.a{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(244, 244, 244);
+    width: 810px;
+    margin: 0 auto;
+    padding: 40px 90px 50px ;
+}
+.a h2{
+    font-family: 'PulmuoneL';
+    /* font-weight: bold; */
+    font-size: 35px;
+}
+.a>.mt25,p{
+    margin-top: 25px;
+}
+.a>.mt30{
+    margin-top: 30px;
+}

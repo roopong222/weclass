@@ -1,0 +1,110 @@
+ul{list-style: none;}
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.all{
+    width: 820px;
+    margin: 0 auto;
+}
+.all .chekbox{
+    border: 1px solid black;
+    background: rgb(247, 247, 247);
+    padding: 10px;
+}
+.ul1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.ul1{
+    margin: 20px 0;
+}
+.ul1 .a{
+    width: calc((100% - 40px)/3);
+    float: left;
+}
+.ul1 .b{
+    width: calc((100% - 40px)/3);
+    float: left;
+    margin: 0 20px;
+}
+.ul1 .c{
+    width: calc((100% - 40px)/3);
+    float: left;
+}
+.ul1 p{
+    display: inline-block;
+}
+.ul1 img{
+    margin: 10px 10px 20px 0;
+}
+.bt{
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    background: rgb(247, 247, 247);
+}
+.bt>dl{
+    float: left;
+}
+.bt>dl>dt{
+    float: left;
+}
+.bt>dl>dd{
+    float: left;
+}
+.btr{
+    float: right;
+}
+.btr>p{
+    margin-left: 10px;
+    float: right;
+}
+.bt>p{
+    clear: both;
+}
+.at>.at1{
+    margin-bottom: 15px;
+}
+.ul11>li>img{
+    float: left;
+}
+.ul11>li>p{
+    margin-top: 8px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    float: left;
+}
+.ul11>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ul22>li>img{
+    float: left;
+}
+.ul22>li>p{
+    margin-top: 8px;
+    float: left;
+}
+.ul22>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.ul33>li>img{
+    float: left;
+}
+.ul33>li>p{
+    margin-top: 8px;
+    float: left;
+}
+.ul33>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.h11{
+    border-bottom: 5px solid blue;
+}

@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%;}
+
+.station{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.train{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s ease 0s;
+}
+.train>li{
+    flex: 1;
+    position: relative;
+}
+.train>li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.404) */
+    background:linear-gradient(90deg,#000000c4,#b41a1a00)
+}
+.train>li>div{
+    position: absolute;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 50%;
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding-right: 600px;
+    font-size: 3rem;
+    z-index: 1;
+    transition: all 0.5s ease 0.5s;
+    opacity: 0;
+}
+.train>li.on>div{
+    top: 50%;
+    opacity: 1;
+}
+.train>li>div>p{
+    font-size: 0.4em;
+}
+.train>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: brightness(0.4); */
+}
+.controler{
+    padding: 10px 0;
+    text-align: center;
+}
+.pagination{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pagination>li{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid rgb(220, 220, 220);
+    background: rgba(121, 121, 121, 0.705);
+    font-size: 0;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.pagination>li.on{
+    background: rgb(0, 0, 0);
+}
+.pagination>li:last-of-type{
+    margin-right: 0;
+}

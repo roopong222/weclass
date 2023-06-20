@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.all{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:'GmarketSansMedium', 'Roboto';
+}
+header{
+    border: 1px solid red;
+    position: relative;
+}
+.title{
+    border: 1px solid gold;
+    display: inline-block;
+    margin: 1rem;
+}
+.search{
+    border: 1px solid blue;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+}
+main{
+    border: 1px solid black;
+}
+.maintop{
+    margin: 50px 50px;
+    position: relative;
+}
+.menu{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid red;
+    vertical-align: top;
+    margin: 1rem;
+}
+.menu li{
+    margin-left: 10px;
+}
+.profile{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid blue;
+    position: absolute;
+    right: 0;
+    margin:1rem
+}
+.content dt,dd{
+    border: 1px solid green;
+    margin: 1rem;
+}
+.content h4{
+    margin:1rem 0;
+}

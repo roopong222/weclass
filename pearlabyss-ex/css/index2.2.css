@@ -1,0 +1,12 @@
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.blankstyle::after{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 4px;
+    background: url(../img/icn_header_new_win.svg) no-repeat 50% 50%;
+}
