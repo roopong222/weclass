@@ -1,0 +1,137 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%;}
+
+/* layout */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    padding-bottom: 0;
+}
+body{
+    background: darkcyan;
+}
+
+.snsMenu{
+    display: flex;
+    font-size: 30px;
+}
+.snsMenu>li{
+    margin-right: 24px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.snsMenu>li:hover{
+    transform: scale(1.3);
+    color: #000;
+}
+.snsMenu>li:last-of-type{
+    margin-right: 0px;
+}
+.logo{
+    box-shadow:  5px 5px 10px #000 ;
+    line-height: 0;
+}
+.stationMenu{
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 70px;
+}
+.stationMenu>li{
+    margin-right: 24px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.stationMenu>li:hover{
+    color: #000;
+}
+.stationMenu>li:last-of-type{
+    margin-right: 0px;
+}
+
+.station{
+    width: 100%;
+    height: 500px;
+}
+.train{
+    width: 4600px;  /* 리스트를 클릭했을 때 원래크기보다 600픽셀이 더늘어날 것을 예상 */
+    height: 100%;
+    display: flex;
+    transition: all 1s ease 0s;
+}
+.train>li{
+    width: 180px;
+    height: 400px;
+    margin-right: 20px;
+    background: #fff;
+    position: relative;
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.train>li:hover{
+    opacity: 1;
+}
+.title{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: all 0.3s linear 0s;
+}
+.big{
+    display: none;
+}
+
+.train>li>p{
+    display: none;
+}
+.train>li>.btnClose{
+    display: none;
+}
+.small{
+    width: 100%;
+}
+.train>li.on{
+    width: 780px;
+    height: 500px;
+    opacity: 1;
+}
+.train>li.on>.small{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.train>li.on>.title{
+    font-size: 35px;
+    padding: 20px 0;
+    padding-left: 20px;
+    bottom: 280px;
+    background: rgba(0, 0, 0, 0.404);
+}
+.train>li.on>.btnClose{
+    display: block;
+    position: absolute;
+    top: 145px;
+    right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.train>li.on>p{
+    background: #000;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px 20px;
+    transform: translateX();
+}
