@@ -1,0 +1,94 @@
+*{margin: 0; padding: 0;}
+/* html{cursor: none;} */
+.cursor{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: opacity 0.3s linear 0s, transform 0.3s ease 0s,width 0.2s ease 0s,height 0.2s ease 0s;
+    opacity: 0;
+    transform: scale(0.1);
+    border-radius: 50%;
+    background: red;
+    pointer-events: none;
+
+}
+.cursor.on{
+    opacity: 1;
+    transform: scale(1);
+}
+.cursor.on.big{
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border: 1px solid lime;
+}
+.wheelAni{
+    display: none;
+    border: 1px solid lime;
+    width: 20px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -40px;
+    font-size: 0;
+    border-radius: 15px;
+}
+.wh{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: lime;
+    margin-left: -5px;
+    border-radius: 50%;
+    animation: wheelAni 1s ease 0s infinite alternate;
+}
+
+@keyframes wheelAni {
+    0%{
+        top: 10px;
+    }
+    100%{
+        top: 60px;
+    }
+}
+
+.cursor.on.big>.wheelAni{
+    display: block;
+}
+.cursor.on.big+.cursorGuideBox{
+    opacity: 1;
+}
+.cursorGuideBox{
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.815);
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 10px;
+    /* transition: all 0.3s linear 0s; */
+}
+.wrap>section{
+    height: 80vh;
+}
+.wrap>section:nth-of-type(1){
+    background: skyblue;
+}
+.wrap>section:nth-of-type(2){
+    background: blue;
+}
+.wrap>section:nth-of-type(3){
+    background: green;
+}
+.wrap>section:nth-of-type(4){
+    background: orange;
+}

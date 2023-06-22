@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     autoplay: {
       delay: 0,
-      disableOnInteraction:false,
+      disableOnInteraction: false,
     },
   });
   
