@@ -22,11 +22,11 @@
     width: 120px;
     height: 120px;
     background: transparent;
-    border: 1px solid lime;
+    border: 2px solid lime;
 }
 .wheelAni{
     display: none;
-    border: 1px solid lime;
+    border: 2px solid lime;
     width: 20px;
     height: 80px;
     position: absolute;

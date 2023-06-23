@@ -19,7 +19,7 @@ function textAni(cssSelector,option){
     let animationDuration = option.aniSpeed?option.aniSpeed:1
     let aniTxtSize = option.textSize?option.textSize:20
     let aniName = option.effect?option.effect:`introAni`
-    $(cssSelector).css(`font-size`,`0`)
+    // $(cssSelector).css(`font-size`,`0`)
     $(`${cssSelector} b`).css(`line-height`,`1`).css(`opacity`,`0`).css(`display`,`inline-block`).css(`font-size`,`${aniTxtSize}px`)
 
 
