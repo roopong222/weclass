@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+
+.list svg{
+    border: 1px solid red;
+    /* width: 500px; */
+    transform: rotate(-90deg);
+}
+
+.a{
+    transition: all 0.5s ease 0s;
+    fill: skyblue;
+    fill-opacity: 0.5;
+    stroke: red;
+    stroke-width: 2;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+}
+.a:hover{
+    fill: blue;
+    stroke: darkcyan;
+    stroke-width: 3;
+    stroke-dashoffset: calc((1 - 0.8)*314);
+}
+
+.list{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.list>li{
+    flex: 1;
+}
+
+.c1{
+    fill:#fff;stroke:#000;stroke-miterlimit:10;
+    transition: all 5s ease 0s;
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+}
+.c1:hover{
+    stroke: red;
+    stroke-width: 10;
+    stroke-dashoffset: 0;
+}
