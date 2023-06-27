@@ -35,11 +35,11 @@ ul,ol{list-style: none;}
 .c1{
     fill:#fff;stroke:#000;stroke-miterlimit:10;
     transition: all 5s ease 0s;
-    stroke-dasharray: 10000;
-    stroke-dashoffset: 10000;
+    /* stroke-dasharray: 2000;
+    stroke-dashoffset: 4000; */
 }
 .c1:hover{
     stroke: red;
     stroke-width: 10;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0!important;
 }
