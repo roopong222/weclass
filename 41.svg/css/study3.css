@@ -1,6 +1,16 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 ul,ol{list-style: none;}
 
+.wrap{
+    height: 2000px;
+    background: skyblue;
+}
+.box{
+    height: 1000px;
+    background: green;
+}
+
+
 .skill{
     width: 1200px;
     margin: 0 auto;
