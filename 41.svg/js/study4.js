@@ -18,7 +18,7 @@ $(document).ready(function(){
         $(this).css(`stroke-dashoffset`,pathLength)
 
         setTimeout(function(){
-            path.css(`transition`,`stroke-dashoffset 1s ease ${delay}s,fill 1s ease ${delay+1}s`)
+            path.css(`transition`,`stroke-dashoffset 1s ease ${delay}s,fill 1s ease ${delay+3}s`)
         }, 30);
     })
 
