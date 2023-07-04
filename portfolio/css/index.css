@@ -14,14 +14,19 @@ body{
     font-weight: 300;
 }
 .container{
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     color: #fff;
+    margin: 0 auto;
 }
 .container>div{
     width: 100%;
     height: 969px;
     /* border: 1px solid red; */
+}
+.container>div>div{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
 }
 .red{
     color: #F53100;
@@ -45,15 +50,15 @@ body{
     left: 50%;
     width: 600px;
     height: 600px;
-    /* border: 1px solid red; */
     transform: translate(-50%,-50%);
+    fill:#f53100;
 }
 .bgcircle3{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 610px;
-    height: 610px;
+    width: 604px;
+    height: 604px;
     transform: translate(-50%,-50%);
 }
 .a{
@@ -62,7 +67,7 @@ body{
     stroke-width: 1;
     stroke-dasharray: 15;
     stroke-dashoffset: 0;
-    animation: dashmove 15s linear 0s infinite;
+    animation: dashmove 10s linear 0s infinite alternate;
 }
 .b{
     fill: transparent;
@@ -73,10 +78,22 @@ body{
 }
 .c{
     fill: #F53100;
-    animation: scaleani 10s linear 0s infinite;
+    animation: scaleani 5s linear 0s infinite alternate;
 }
 #in1{
-    animation: rotateani 25s linear 0s infinite;
+    animation: rotateani 10s linear 0s infinite alternate;
+}
+
+.cls-1{
+    animation: dashmove2 1.2s ease 0s infinite;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    stroke-width: 10;
+}
+
+@keyframes dashmove2 {
+    0%{stroke-dashoffset: 100;}
+    100%{stroke-dashoffset: 0;}
 }
 @keyframes dashmove {
     0%{stroke-dashoffset: 0;}
@@ -84,13 +101,14 @@ body{
 }
 @keyframes rotateani {
     0%{transform: rotate(0deg);}
-    100%{transform: rotate(-360deg);}
+    100%{transform: rotate(360deg);}
 }
 @keyframes scaleani {
-    0%{transform: scale(0);}
-    100%{transform: rotate(-50);}
+    0%{transform: scale(1);}
+    100%{transform: scale(0.9);}
 }
 .introtxt{
+    width: 1000px;
     height: 280px;
     position: absolute;
     top: 50%;
@@ -121,12 +139,13 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 100;
     padding: 0 10px;
 }
 .scroll{
     width: 200px;
+    height: 50px;
     font-size: 22px;
     text-transform: uppercase;
     position: absolute;
@@ -134,17 +153,30 @@ body{
     left: 43.5%;
     /* transform: translateX(-50%); */
     transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+}
+.inscroll{
+    width: 100px;
+    height: 10px;
+    transform: translateY(-15px);
+    margin-left: 10px;
 }
 
 /* ---about------------------------------------- */
-
 .aboutbg{
     width: 100%;
-    height: 100%;
+    height: -0px;
     background: #F53100;
     border-radius: 50px 50px 0 0;
-    padding: 50px 40px;
+    padding: 0px 0px;
     position: relative;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+}
+.aboutbg.on{
+    height: 969px;
+    padding: 50px 40px;
 }
 .abouttop{
     width: 100%;
@@ -258,25 +290,101 @@ section.abouttop1{
     width: 450px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.skillList>li>div>h4{
+.skilltxt{
+    width: 270px;
+}
+.skilltxt>h4{
     margin-bottom: 10px;
 }
-.skillList>li>div>p{
-    padding-right: 14px;
+.skilltxt>p{
+
 }
 .svgdiv{
-    width: 40%;
+    width: 170px;
+    height: 170px;
     position: relative;
 }
-.skillList>li>div.svgdiv>p{
+.circlebox1{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);;
+}
+.s1{
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 5;
+    transition: all 1s ease 0s;
+    stroke-dasharray : 378; 
+    stroke-dashoffset : 378;
+}
+/* .svgdiv:hover .s1{
+    stroke-dashoffset: calc((1 - 0.8)*378);
+}
+.svgdiv:hover .s1.p60{
+    stroke-dashoffset: calc((1 - 0.6)*378);
+}
+.svgdiv:hover .s1.p70{
+    stroke-dashoffset: calc((1 - 0.7)*378);
+} */
+@keyframes spinCircle {
+    0% {
+        box-shadow: 0px -5px 20px #fff
+    }
+    12.5% {
+        box-shadow: 2.5px -2.5px 20px #fff
+    }
+    25% {
+        box-shadow: 5px 0px 20px #fff
+    }
+    37.5% {
+        box-shadow: 2.5px 2.5px 20px #fff
+    }
+    50% {
+        box-shadow: 0px 5px 20px #fff
+    }
+    62.5% {
+        box-shadow: -2.5px 2.5px 20px #fff
+    }
+    75% {
+        box-shadow: -5px 0px 20px #fff
+    }
+    87.5% {
+        box-shadow: -2.5px -2.5px 20px #fff
+    }
+    100% {
+        box-shadow: 0px -5px 20px #fff
+    }
+}
+
+/* .circlebox1,.circlebox2{
+    pointer-events: none;
+} */
+.circlebox2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 0px -10px 10px #fff; */
+    animation: spinCircle 2s linear infinite;
+    /* border: 1px solid #fff; */
+    border-radius: 50%;
+}
+.svgdiv>p{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding-right: 0px;
-    font-size: 20px;
     font-weight: 500;
+    font-family: Play;
+    font-size: 40px;
 }
 .line1{
     position: absolute;
@@ -323,19 +431,20 @@ section.abouttop1{
 }
 .popupstation{
     width: 100%;
-    height: 455px;
+    height: 465px;
     overflow: hidden;
     margin-top: 150px;
     position: relative;
     padding: 0 50px;
 }
 .popuptrain{
-    align-items: flex-end;
+    align-items: center;
 }
 .popuptrain>li{
     /* width: 400px; */
-    height: 410px;
+    height: 400px;
     position: relative;
+    box-shadow: 10px 10px 10px #000;
 }
 .popuptrain>li::after{
     content: "";
@@ -797,12 +906,31 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
 /* -------redesign---------------------------- */
 .redesign{
     padding: 50px 0;
+    position: relative;
+}
+.hoverimgtxt{
+    position: absolute;
+    top: 300px;
+    left: 310px;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.1s ease 0s;
+}
+.hoverimgtxt>p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 200;
 }
 .redesigntxt{
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 100px;
+    position: relative;
 }
 .redesigntxt>h2{
     font-size: 40px;
@@ -814,22 +942,31 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
 .redesigncontent{
     display: flex;
 }
+.bgimg{
+    width: 760px;
+    position: relative;
+}
 .hoverimg{
-    width: 400px;
-    height: 600px;
-    margin-left: 200px;
+    width: 490px;
+    height: 300px;
     overflow: hidden;
+    box-shadow: 10px 10px 30px #000;
+    position: absolute;
+    top: 86px;
+    left: 137px;
 }
 .inhoverimg{
+    position: absolute;
+    left: 0;
+    top: 0;
     transition: all 10s linear 0s;
 }
 .hoverimg:hover>.inhoverimg{
-    transform: translateY(-765px);
+    transform: translateY(-1381px);
 }
-
 .redesigntxtbox2{
     width: 500px;
-    margin-left: 160px;
+    /* margin-left: 160px; */
     padding: 30px 0;
 }
 .redesigntxtbox2>h3{
@@ -880,11 +1017,21 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     height: 40px;
     background: #F53100;
     border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s ease 0s;
+}
+.redesigntxtbox2>ul>li:hover{
+    border: 2px solid rgb(255, 255, 255);
 }
 .redesigntxtbox2>ul>li.reda{
     background: #fff;
     color: #F53100;
     font-weight: 500;
+    border: 2px solid #f5310000;
+    transition: all 0.5s ease 0s;
+}
+.redesigntxtbox2>ul>li.reda:hover{
+    border: 2px solid #F53100;
 }
 .redesigntxtbox2>ul>li>a{
     display: flex;
