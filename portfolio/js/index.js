@@ -1,5 +1,26 @@
 $(document).ready(function(){
-    
+    // mousemove cursor-----------------------------------------------
+    $(document).mousemove(function(event){
+        let x = event.clientX
+        let y = event.clientY
+
+        $(`.curTxt`).css(`left`,`${x+10}px`)
+        $(`.curTxt`).css(`top`,`${y+15}px`)
+
+        $(`.cursorSub`).css(`top`,`${y+23}px`)
+        $(`.cursorSub`).css(`left`,`${x+80}px`)
+    })
+    $(`.bannertrain`).mouseover(function(){
+        $(`.curTxt`).addClass(`on`)
+        $(`.cursorSubBox`).addClass(`on`)
+    })
+    $(`.bannertrain`).mouseout(function(){
+        $(`.curTxt`).removeClass(`on`)
+        $(`.cursorSubBox`).removeClass(`on`)
+    })
+
+
+    // mouse Scroll event-------------------------------------------
     $(`.container>div`).on(`wheel DOMMouseScroll`,function(event){
         // console.log(event)
         let E = event.originalEvent
@@ -11,7 +32,6 @@ $(document).ready(function(){
             delta = E.wheelDelta
             // 크롬은 wheelDelta
         }
-
 
         if(delta<0){
             //마우스휠을 내렸을 때

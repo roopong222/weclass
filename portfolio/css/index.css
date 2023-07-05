@@ -31,6 +31,61 @@ body{
 .red{
     color: #F53100;
 }
+/* ---cursor------------------------ */
+/* .cursorSubBox>div:nth-of-type(1){transform: scale(1);}
+.cursorSubBox>div:nth-of-type(2){transform: scale(0.9);}
+.cursorSubBox>div:nth-of-type(3){transform: scale(0.8);}
+.cursorSubBox>div:nth-of-type(4){transform: scale(0.7);} */
+
+.cursorSubBox.on>div{
+    animation: scrillAni 1.5s ease 0s infinite alternate;
+}
+
+@keyframes scrillAni {
+    0%{transform: translateX(0px) scale(1)}
+    100%{transform: translateX(-25px) scale(0.9)}
+}
+@keyframes txtAni {
+    0%{color: #fff;}    
+    100%{color: #000;}
+}
+.cursorSubBox{
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.cursorSubBox.on{
+    opacity: 1;
+}
+.cursorSub{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    /* border: 1px solid #fff; */
+    pointer-events: none;
+    /* transition: all 0.1s linear 0s; */
+    z-index: 100;
+    border-radius: 50%;
+    background: #000;
+}
+
+.curTxt{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    opacity: 0;
+    z-index: 100;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    /* transition: all 0.5s ease 0s; */
+    /* animation: txtAni 1s ease 0s infinite alternate; */
+}
+.curTxt.on{
+    opacity: 1;
+}
+
 /* ---intro------------------------- */
 .intro{
     position: relative;
@@ -444,7 +499,7 @@ section.abouttop1{
     /* width: 400px; */
     height: 400px;
     position: relative;
-    box-shadow: 10px 10px 10px #000;
+    box-shadow: 5px 10px 10px #000;
 }
 .popuptrain>li::after{
     content: "";
@@ -609,7 +664,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     height: 30px;
     border-radius: 50%;
     font-size: 0px;
-    border: 1px solid #000;
+    box-shadow: 2px 2px 3px #000;
 }
 .c00FF35{
     background: #00ff35;
@@ -730,7 +785,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     z-index: 11;
 }
 .lb img{
-    object-position: 35% 0;
+    object-position: 42% 0;
 }
 .bannerlayoutul>li img{
     height: 100%;
@@ -825,6 +880,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     width: 500px;
     /* height: 400px; */
     margin-right: 100px;
+    margin-left: 80px;
 }
 .bannerimgbt>img{
     object-fit: contain;
@@ -856,7 +912,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     height: 30px;
     border-radius: 50%;
     font-size: 0px;
-    border: 1px solid #000;
+    box-shadow: 2px 2px 3px #000;
 }
 .c07665D{
     background: #07665D;
@@ -911,7 +967,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
 .hoverimgtxt{
     position: absolute;
     top: 300px;
-    left: 310px;
+    left: 280px;
     color: #fff;
     opacity: 1;
     transition: all 0.1s ease 0s;
@@ -946,6 +1002,9 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     width: 760px;
     position: relative;
 }
+.bgimg>img{
+    object-position: -30px;
+}
 .hoverimg{
     width: 490px;
     height: 300px;
@@ -953,7 +1012,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     box-shadow: 10px 10px 30px #000;
     position: absolute;
     top: 86px;
-    left: 137px;
+    left: 107px;
 }
 .inhoverimg{
     position: absolute;
@@ -993,7 +1052,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px #000;
     margin-right: 15px;
 }
 .redcolor>li:last-of-type{

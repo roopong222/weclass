@@ -111,12 +111,9 @@ html{
 .cursorSub.on{
     opacity: 1;
 }
-.cursorSubBox>div:nth-of-type(1){transition: all 0.1s ease 0s; transform: scale(1);}
-.cursorSubBox>div:nth-of-type(2){transition: all 0.2s ease 0s; transform: scale(0.9);}
-.cursorSubBox>div:nth-of-type(3){transition: all 0.3s ease 0s; transform: scale(0.8);}
-.cursorSubBox>div:nth-of-type(4){transition: all 0.4s ease 0s; transform: scale(0.7);}
-.cursorSubBox>div:nth-of-type(5){transition: all 0.5s ease 0s; transform: scale(0.6);}
-
+.cursorSubBox>div{
+    transition: all 0.1s ease 0s; transform: scale(1);
+}
 .cursorSubBox.on>div{
     transform: scale(1);
     width: 10px;
