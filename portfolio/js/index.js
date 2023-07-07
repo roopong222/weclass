@@ -150,5 +150,14 @@ $(document).ready(function(){
     })
 
     
+    // redesign-----------------------------------------------
+    $(`.reG`).click(function(e){
+        e.preventDefault()
+        $(`.redesignpopup`).addClass(`on`)
+    })
+    $(`.reclose`).click(function(e){
+        e.preventDefault()
+        $(`.redesignpopup`).removeClass(`on`)
+    })
 
 })

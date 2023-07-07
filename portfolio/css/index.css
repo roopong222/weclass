@@ -620,13 +620,14 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     background: #F53100;
     color: #fff;
     border-radius: 10px 10px 0 0;
-}
-.pclose>span>a{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    font-size: 1.5rem;
+}
+.pclose>span{
+    width: 30px;
+    height: 30px;
 }
 .popuplayouttxt{
     /* height: 300px; */
@@ -740,7 +741,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     height: 95%;
     /* border: 1px solid red; */
     transform: translateY(50px);
-    z-index: 10;
+    /* z-index: 10; */
 }
 .bannerlayoutul>li{
     width: 576px;
@@ -808,11 +809,12 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     width: 288px;
     height: 100%;
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 0;
     /* text-align: center; */
     padding: 0 20px;
     padding-top: 250px;
+    /* z-index: 5; */
 }
 .bannertxt>h2{
     font-size: 40px;
@@ -938,7 +940,7 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
 .bclose{
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 0;
     width: 50px;
     height: 50px;
     background: #F53100;
@@ -946,17 +948,21 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     border-radius: 10px 10px 0 0;
     opacity: 0;
     pointer-events: none;
-}
-.bclose>span>a{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    font-size: 1.5rem;
+    justify-content: center;
+}
+.bclose>span{
+    width: 30px;
+    height: 30px;
+}
+.bclose>span>img{
+    object-fit: contain;
 }
 .bannerstation.on>.bclose{
     opacity: 1;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 /* -------redesign---------------------------- */
@@ -1097,6 +1103,39 @@ div.popuptrain-pagination.swiper-pagination-progressbar{
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+
+.redesignpopup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease 0s;
+}
+.redesignpopup.on{
+    pointer-events: auto;
+    opacity: 1;
+}
+.reimglayout{
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 85px;
+    overflow: auto;
+}
+.reclose{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 85px;
+    right: 180px;
+    cursor: pointer;
 }
 /* -------outtro--------------------------- */
 .outtro{
