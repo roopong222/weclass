@@ -36,40 +36,40 @@ ul,ol{list-style: none;}
     align-items: center;
 }
 .flotingTxt>h1>b{
-    /* font-size: 5rem;
-    opacity: 0;
-    display: inline-block; */
+    font-size: 5rem;
+    opacity: 1;
+    display: inline-block;
 }
-/* .flotingTxt>h1>b:nth-of-type(1){
-    animation: introAni 1s ease 0s forwards;
+.flotingTxt>h1>b:nth-of-type(1){
+    animation: introAni 1s ease 0s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(2){
-    animation: introAni 1s ease 0.25s forwards;
+    animation: introAni 1s ease 0.25s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(3){
-    animation: introAni 1s ease 0.5s forwards;
+    animation: introAni 1s ease 0.5s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(4){
-    animation: introAni 1s ease 0.75s forwards;
+    animation: introAni 1s ease 0.75s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(5){
-    animation: introAni 1s ease 1s forwards;
+    animation: introAni 1s ease 1s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(6){
-    animation: introAni 1s ease 1.25s forwards;
+    animation: introAni 1s ease 1.25s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(7){
-    animation: introAni 1s ease 1.5s forwards;
+    animation: introAni 1s ease 1.5s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(8){
-    animation: introAni 1s ease 1.75s forwards;
+    animation: introAni 1s ease 1.75s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(9){
-    animation: introAni 1s ease 2s forwards;
+    animation: introAni 1s ease 2s forwards infinite alternate;
 }
 .flotingTxt>h1>b:nth-of-type(10){
-    animation: introAni 1s linear 2.25s forwards;
-} */
+    animation: introAni 1s linear 2.25s forwards infinite alternate;
+}
 .flotingTxt>p{
     border-top: 1px solid #fff;
     letter-spacing: 20px;
@@ -88,12 +88,10 @@ ul,ol{list-style: none;}
 
 @keyframes introAni {
     0%{
-        opacity: 0;
-        transform: translateX(-10px) rotateY(45deg);
+        transform: translateY(0);
     }
     100%{
-        opacity: 1;
-        transform: translateX(0px) rotateY(0);
+        transform: translateY(-50px);
     }
 }
 

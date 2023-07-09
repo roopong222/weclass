@@ -965,13 +965,26 @@
     /* -------------------------------------------------- */
     .content2{
         width: 100%;
+        height: 4000px;
+        /* border: 1px solid red; */
+        position: relative;
     }
     .s2banner{
-        position: relative;
-        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 100%;
-        padding-bottom: 4000px;
+        height: 969px;
+        /* border: 1px solid blue; */
+    }
+    .value_box{
+        width: 100%;
+        height: 650px;
+        transition: all 0.5s ease 0s;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
     }
     .value_box>h2{
         font-size: 3rem;
@@ -981,12 +994,6 @@
     }
     .value_box>h2>span{
         color: #0057B8;
-    }
-    .value_box{
-        width: 100%;
-        height: 650px;
-        transition: all 0.5s ease 0s;
-        margin-bottom: 200px;
     }
     .bgimg{
         width: 100%;
@@ -1003,8 +1010,11 @@
         height: 100%;
         background: url(../img/sub2/1x/bg_wrap1.png) no-repeat 50% 50%;
         background-size: cover;
-        z-index: 3;
         transition: all 1s ease 0s;
+        opacity: 0;
+    }
+    .bgimgbox1.on{
+        opacity: 1;
     }
     .bgimgbox2{
         position: absolute;
@@ -1014,8 +1024,11 @@
         height: 100%;
         background: url(../img/sub2/1x/bg_wrap2.png) no-repeat 50% 50%;
         background-size: cover;
-        z-index: 2;
         transition: all 1s ease 0s;
+        opacity: 0;
+    }
+    .bgimgbox2.on{
+        opacity: 1;
     }
     .bgimgbox3{
         position: absolute;
@@ -1025,8 +1038,11 @@
         height: 100%;
         background: url(../img/sub2/1x/bg_wrap3.png) no-repeat 50% 50%;
         background-size: cover;
-        z-index: 1;
         transition: all 1s ease 0s;
+        opacity: 0;
+    }
+    .bgimgbox3.on{
+        opacity: 1;
     }
     .bgimgbox4{
         position: absolute;

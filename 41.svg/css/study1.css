@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0;}
 ul,ol{list-style: none;}
 
-/* .list svg{
+.list svg{
     border: 1px solid red;
     width: 500px;
     transform: rotate(-90deg);
@@ -42,7 +42,7 @@ ul,ol{list-style: none;}
     stroke: red;
     stroke-width: 10;
     stroke-dashoffset: 0!important;
-} */
+}
 
 /* ------------------------------------------------------------ */
 
