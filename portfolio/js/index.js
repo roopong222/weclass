@@ -32,7 +32,9 @@ $(document).ready(function(){
             delta = E.wheelDelta
             // 크롬은 wheelDelta
         }
-
+        if($(`.redesignpopup`).hasClass("on") == true){
+            return
+        }
         if(delta<0){
             //마우스휠을 내렸을 때
             if($(this).next().length!=0){
